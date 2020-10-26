@@ -41,11 +41,9 @@
   {% endif %}
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
-      <h1 class="govuk-heading-xl">{{ page_title }}</h1>
-    </div>
-  </div>
-  <div class="govuk-grid-row direct-award-project-overview-page">
-    <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-xl">{{ page_title }}</h1>
+
     {% if not project %}
       <p class="govuk-body">
         Before you start you should
@@ -115,7 +113,7 @@
             </a>
           </p>
         {% else %}
-          <p class="search-summary application-notice info-notice">{{ search_summary_sentence }}</p>
+          <p class="search-summary search-summary--small application-notice info-notice">{{ search_summary_sentence }}</p>
 
           {% if not search.searchedAt %}
             <p class="govuk-body">
