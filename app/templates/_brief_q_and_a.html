@@ -29,5 +29,5 @@
     {% endif %}
   </a>
 {% elif brief.status == 'live' %}
-  The deadline for asking questions about this opportunity was {{ brief.clarificationQuestionsClosedAt|dateformat }}.
+  <p class="govuk-body">The deadline for asking questions about this opportunity was {{ brief.clarificationQuestionsClosedAt|dateformat }}.</p>
 {% endif %}
